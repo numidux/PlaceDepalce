@@ -97,7 +97,10 @@ $(document).ready(function() {
   	
   	}
 
-
+  	if (place == 3)
+  	{
+  		alert("You Win !");
+  	}
   	return ('P: ' + place + ' D: '+ deplace);
   	
 
