@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+ <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
+<script src="jsencrypt.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ <script src="script.js"></script>
+ <script src="jquery.cookie.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+	<title></title>
+</head>
+<body onload="init();">
+
+
+<div class="row">
+
+<div class="col-md-8">
+
+<h3 class="numero"><span id = "label" class="label label-default"></span></h3>
+<table class="keypad">
+
+	<tr class="key-row">
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button" disabled>Num<br/>Lock</button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">/</button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">*</button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">-</button>
+		</td>
+	</tr>
+	<tr class="key-row">
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button"  >7<br/><span class="key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">8<br/><span class="glyphicon glyphicon-arrow-up key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">9<br/><span class="key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell" rowspan="2">
+			<button class="btn btn-default key tall-key" type="button">+</button>
+		</td>
+	</tr>
+	<tr class="key-row">
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">4<br/><span class="glyphicon glyphicon-arrow-left key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">5</button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">6<br/><span class="glyphicon glyphicon-arrow-right key-alt-fn"></span></button>
+		</td>
+	</tr>
+	<tr class="key-row">
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">1<br/><span class="key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">2<br/><span class="glyphicon glyphicon-arrow-down key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">3<br/><span class="key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell" rowspan="2">
+			<button class="btn btn-default key tall-key" type="button">Enter</button>
+		</td>
+	</tr>
+	<tr class="key-row">
+		<td class="key-cell" colspan="2">
+			<button class="btn btn-default key wide-key" type="button">0<br/><span class="key-alt-fn"></span></button>
+		</td>
+		<td class="key-cell">
+			<button class="btn btn-default key" type="button">.<br/><span class="key-alt-fn">Delete</span></button>
+		</td>
+	</tr>
+</table>
+
+	<div class="btn-group numero"  role="group" aria-label="...">
+  		<!-- <button type="button" class="btn btn-default">Share </button> -->
+  		<button id="refresh" type="button" class="btn btn-default">Refresh</button>
+	</div>
+
+
+</div>
+
+
+<div id="historique" class="col-md-4">
+
+
+	
+    <h2>Historique</h2>
+
+    <ol id="olh" data-role="listview">
+
+    </ol>
+
+</div>
+
+
+ </div>
+</body>
+</html>
