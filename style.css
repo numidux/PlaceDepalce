@@ -1,0 +1,44 @@
+.keypad {
+     margin-left: 50%;
+    padding: 0;
+    width: 300px; /* not actually a static size, % in real use */
+}
+
+
+.keypad .key-row {
+    width: 100%
+}
+
+.keypad .key-row .key-cell {
+    padding: 2px;
+    width: 25%;
+}
+
+.keypad .key-row .key-cell button.key {
+    font-size: medium;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+}
+
+.keypad .key-row .key-cell button.key.tall-key {
+    height: 144px;
+}
+
+.keypad .key-row .key-cell button.key.wide-key {
+}
+
+.keypad .key-row .key-cell button .key-alt-fn {
+    font-size: small;
+    font-weight: normal;
+}
+
+
+.numero {
+    margin-left: 60%;
+    width: 100px;
+}
+
+#historique {
+    margin-left: -10%;
+}
