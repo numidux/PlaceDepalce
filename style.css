@@ -36,8 +36,12 @@
 
 .numero {
     
-    width: 100px;
+    width: 120px;
 
+}
+
+.btns{
+    margin-bottom: 10px;
 }
 
 .text {

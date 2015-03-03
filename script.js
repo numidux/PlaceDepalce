@@ -30,6 +30,7 @@
 
 
 	$.cookie('secret', encrypted);
+	
 
   }
 $(document).ready(function() {
@@ -40,6 +41,7 @@ $(document).ready(function() {
   	$('#olh').empty();
 
   });
+
 });
 
 
