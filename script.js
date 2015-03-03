@@ -37,6 +37,7 @@ $(document).ready(function() {
   $('#refresh').click(function() {
   	
   	init();
+  	$('.key').prop("disabled",false);
   	$('#label').text('');
   	$('#olh').empty();
 
