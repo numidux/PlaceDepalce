@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     if (old.length < 3 && (clicked in Array.apply(null, Array(10)).map(function (_, i) {return i;}))) {
     	$('#label').text(old + clicked);
-    	$(this).disabled = true;
+    	$(this).prop("disabled",true);
     }
 
     if(clicked == ".Delete") {
@@ -66,7 +66,7 @@ $(document).ready(function() {
     if(clicked == "Enter") {
     	$("#olh").append("<li><a href='#''>" + old +"     "+ getResult(old) +"</a></li>").listview('refresh');
 
-
+    	$('.key').prop("disabled",false);
     	$('#label').text('')
 
     	
