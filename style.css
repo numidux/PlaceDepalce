@@ -1,5 +1,5 @@
 .keypad {
-     margin-left: 50%;
+    
     padding: 0;
     width: 300px; /* not actually a static size, % in real use */
 }
@@ -35,10 +35,10 @@
 
 
 .numero {
-    margin-left: 60%;
+    
     width: 100px;
 }
 
 #historique {
-    margin-left: -10%;
+
 }

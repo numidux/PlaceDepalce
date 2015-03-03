@@ -22,18 +22,19 @@
 	$.cookie('secret', encrypted);
 
 	var t = $.cookie('name');
-	console.log(encrypted);
+	console.log(code)
+	console.log(uncrypted);
   }
 $(document).ready(function() {
   $('#refresh').click(function() {
-  	alert( "Handler for .click() called." );
+  	
   	init();
   	$('#label').text('');
   	$('#olh').empty();
 
   });
 });
-  
+
 
 
   $(document).on('click', "button.key", function() {
