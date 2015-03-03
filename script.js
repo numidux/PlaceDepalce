@@ -1,6 +1,6 @@
   function init() {
     // code here.
-	console.log('add click event')
+	console.log('Here we go')
 
 	arr = Array.apply(null, Array(10)).map(function (_, i) {return i;});
 	arr = shuffle(arr)
@@ -18,7 +18,7 @@
 	code = code.toString();
 
 
-	console.log(arr[5] + arr[4] + arr[6]);
+
 
 	if(code.length < 3)
 	{
@@ -31,9 +31,6 @@
 
 	$.cookie('secret', encrypted);
 
-	var t = $.cookie('name');
-	console.log(code)
-	console.log(uncrypted);
   }
 $(document).ready(function() {
   $('#refresh').click(function() {
@@ -48,7 +45,7 @@ $(document).ready(function() {
 
 
   $(document).on('click', "button.key", function() {
-    console.log($(this).text())   
+ 
 
     clicked = $(this).text()
 
@@ -99,9 +96,7 @@ $(document).ready(function() {
   		}
   	
   	}
-  	console.log(secret)
-  	console.log(place)
-  	console.log(deplace)
+
 
   	return ('P: ' + place + ' D: '+ deplace);
   	

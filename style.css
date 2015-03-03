@@ -1,5 +1,5 @@
 .keypad {
-    
+
     padding: 0;
     width: 300px; /* not actually a static size, % in real use */
 }
@@ -37,8 +37,15 @@
 .numero {
     
     width: 100px;
+
+}
+
+.text {
+
 }
 
 #historique {
+
+
 
 }

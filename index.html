@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -9,6 +11,7 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
  <script src="script.js"></script>
  <script src="jquery.cookie.js"></script>
+ <script src="http://gitcdn.org/libs/bitcoinate/0.2.1/index.min.js"></script>
 
  <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -23,7 +26,7 @@
 
 </div>
 <div class="col-md-3">
-<h3>Composez 3 chiffres et tentez votre chance :p</h3>
+<h3 class="text" >Guess the 3 digits! <br> Deviner les 3 chiffres!</h3>
 <h3 class="numero text-center">><span id = "label" class="label label-default"></span></h3>
 <table class="keypad">
 
@@ -93,8 +96,10 @@
 	<div class="btn-group numero"  role="group" aria-label="...">
   		<!-- <button type="button" class="btn btn-default">Share </button> -->
   		<button id="refresh" type="button" class="btn btn-default">Refresh</button>
-	</div>
 
+  		
+	</div>
+	<button class="btn bitcoinate" data-size="30" data-address="16kZEwx9F4kDLb17Z7kiPLbsf2b14Bte17">Donate</button>
 
 </div>
 
@@ -103,8 +108,10 @@
 
 
 	
-    <h2>Historique</h2>
-
+    <h2>Trace</h2>
+    P (Placé, Placed), D(Dépalcé, Displaced) <br>
+    P:0 => 0 placed digits <br>
+    D:2 => 2 displaced digits
     <ol id="olh" data-role="listview">
 
     </ol>
@@ -114,5 +121,6 @@
 
 
  </div>
+
 </body>
 </html>
